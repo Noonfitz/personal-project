@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="public/styles/styles.css">
+     <!--script -->
+     <script defer src="script.js"></script>
+     
+    <title>Donation Form</title>
+</head>
+
+<body class="form-body">
+
+
+<!-- first container  -->
+
+
+  <div class="first-container">
+     <h1>Ways to give</h1>
+     <p>Every time you support us, you are saving lives and giving animals care, love,
+      and the second chance they deserve. There are so many ways to support the animals you love.</p>
+  </div>
+
+<!--second container (aminal in need) -->
+
+<div class="second-container">
+    <h2 class="choiceHead">Give Now to Help Animals in Need!</h2>   
+
+    <div class="row animalNeed">
+
+    
+        <div class="col">
+           <img src="public/images/provideToys.jpg" alt="dog with toy">
+           <p><b>$25</b> can provide food, toys and treats for rescued animals to help them feel safe and loved</p>
+        </div>
+
+        <div class="col">
+           <img src="public/images/vaccine.jpg" alt="vaccine for animal">
+           <p><b>$50</b> can provide vaccines for up to five community cats - feral, stray, and friendly cats living outdoors</p>
+        </div>
+    
+
+    
+        <div class="col">
+           <img src="public/images/shelterDogs.jpg"shelter for animal">
+           <p><b>$100</b> can provide a shelter with special enrichment while they wait for their new homes</p>
+        </div>
+
+        <div class="col">
+           <img src="public/images/investigate.jpg" alt="">
+           <p><b>$500</b> can help protect animals by supporting our efforts to investigate cases of cruelty ans neglect</p>
+        </div>
+      
+
+    </div>
+</div>
+
+
+
+<!--personal info-->
+
+<form id ="form-donation" action="./submit.html" method ="post "class="information">
+    <h2 class="donorHead ">Personal Info</h2>
+
+  <div class="donor-section">
+        
+      <div id="fullname">
+        <!-- First Name -->
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" required />
+        </div>
+  
+        <!-- Last Name -->
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" />
+        </div>
+      </div>
+
+
+    <label for="email">Email</label>
+    <input  type="Email" name="email" id="email" required>
+
+    <label for="">Address</label>
+    <input  type="text" name="" id="">
+
+    <div id="address">
+      <!-- City -->
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city"  />
+      </div>
+
+      <!-- State -->
+      <div>
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" />
+      </div>
+    
+      <!-- Zip -->
+     <div>
+        <label for="zipCode">Zip Code</label>
+        <input type="text" id="zipCode" name="zip code" />
+      </div>
+    </div>
+
+
+    <label for="phone">Phone (Optional) </label>
+    <input type="text" name="" id="phone">
+  </div>
+
+
+    <!--donation information-->
+
+  <div class="donaInform">
+
+       
+    <h2 class="donorHead">Donation information</h2>
+    <h4 >*Gift Amount</h4>
+   <div class="space">
+     <input type="radio" id="money"   value="fiveHun"   name="money"><span> </span><label for="fiveHun">$500</label><br>
+     <input type="radio" id="money" value="oneHun"    name="money"><span> </span><label for="oneHun">$100</label><br>
+     <input type="radio" id="money" value="fifth"     name="money"><span> </span><label for="fifth">$50</label><br>
+     <input type="radio" id="money" value="twentyFive"name="money"><span> </span><label for="twentyFive">$25</label><br>
+     <input type="radio" id="money" value="upto"      name="money"><span> </span><label for="upto">Other</label>
+     <input class="putAmount" name ="other-input" id="other-input"  type="text"><br>
+   </div>
+      
+   <div class= "monthlyOrOneTime">
+       <label for="">Is this a one-time gift or a monthly donation?</label><br>
+       <select name="monthlyDona" id="dropdown" class="dropDownMonthly">
+         <option value="nothing" selected></option>
+         <option value="one-time">One-time</option>
+         <option value="monthly">Monthly</option>
+         </select>
+    </div>  
+
+
+
+
+    <h2 class="paymentHead">Payment</h2>
+    <div class="space">
+      <input type="radio" id="credit" name="payment"><span> </span><label for="credit">Credit</label><br>
+      <input type="radio" id="bank" name="payment"><span> </span><label for="bank">Bank</label><br>
+      <input type="radio" id="paypal" name="payment"><span> </span><label for="paypal">Paypal</label><br>
+    </div>
+
+   <div class="creditSpace">
+    <label for="creditCard">Credit Card Number</label>
+    <input type="password" id="creditCard" maxlength ="16" class="creditCard" required>
+   </div>
+
+
+    <label for="">Expiration Date</label>
+
+<div id="expireMonthYear">
+  <div>
+    <select name="month" id="dropdown">
+      <option value="nothing" selected>month</option>
+      <option value="jan">01</option>
+      <option value="jan">02</option>
+      <option value="jan">03</option>
+      <option value="jan">04</option>
+      <option value="jan">05</option>
+      <option value="jan">06</option>
+      <option value="jan">07</option>
+      <option value="jan">08</option>
+      <option value="jan">09</option>
+      <option value="jan">10</option>
+      <option value="jan">11</option>
+      <option value="jan">12</option>
+    </select>
+ </div>
+
+  <div>
+    <select name="month" id="dropdown" >
+      <option value="nothing" selected>year</option>
+      <option value="jan">23</option>
+      <option value="jan">24</option>
+      <option value="jan">25</option>
+      <option value="jan">26</option>
+      <option value="jan">27</option>
+    </select><br>
+  </div>
+
+</div>
+
+    <div class="cvv">
+       <label for="">Security Code</label>
+        <input type="text"  maxlength ="3" name="cvv" id="cvv" data-validation="number" data-validation-error-msg="Enter 3 digit CVV" required>
+    </div>
+
+     <div class="button">
+     <button class="btn">Donate</button>
+     </div>
+
+  </div>
+</form>
+
+
+  </body>
+</html>
