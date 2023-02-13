@@ -1,0 +1,149 @@
+
+
+* {
+ box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    font-family: var(--font-family);
+}
+
+:root {
+    --white: #FFFFFF;
+    --blue: #50808E;
+    --blue-green : #69A297;
+    --light-green : #A3C9A8;
+    --bone:  #DDD8C4;
+    --light-orange: #FEBE8C;
+    --font-size: 1.4rem;
+    --font-family:'Open Sans', sans-serif;
+}
+
+/* navigation bar */
+
+.nav-bar {
+    background-color: var(--blue-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar img {
+    width:140px;
+}
+
+
+.nav-bar li {
+    color: var(--white);
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-bar li:visited {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-bar li:hover {
+    color: var(--light-orange);
+    font-weight: bold;
+}
+
+.nav-bar li:active {
+    font-weight: bold;
+    color : var(--bone);
+}
+
+
+/* donate.html */
+
+  .bio{
+    text-align: center;
+    margin-top:40px;
+  }
+  
+  .bio h1 {
+   color : var(--blue-green);
+  }
+  
+  .bio p {
+    width:70%;
+    margin: 0 auto;
+    font-size: var(--font-size); 
+
+  }
+
+  .donate-amount {
+    margin-bottom: 30px;
+  }
+  
+  
+  .donate-amount h2 {
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .animalNeed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:  0 auto;
+  }
+  .animalNeed img{
+    width:240px;
+    height:210px;
+    overflow: hidden;
+    border-radius:50%;
+    align-items: center;
+
+  }
+
+  .donate-content {
+    text-align: center;
+    margin: 0 auto;
+    width:300px;
+  }
+
+  .donate-amount h2 {
+    color:var(--blue-green);
+  }
+  
+  .animalNeed p{
+    text-align: center;
+    margin: 20px 30px;
+    font-size: 1.1rem;
+    
+  
+  }
+  
+  
+  
+        /* personal info*/
+  #form-donation{
+     padding-top: 20px;
+    background-color: var(--bone);
+
+
+  }
+
+#form-donation h2 {
+    color: var(--blue);
+    text-align: center;
+}
+
+  
+    
+ 
+   
+ 
+      /*donation information */
+  
+    
