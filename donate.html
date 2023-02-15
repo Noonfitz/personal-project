@@ -21,9 +21,9 @@
   <nav class="nav-bar">
     <a href="./index.html"><img src="./public/images/logo.jpg" alt="logo-report-pet"></a> 
     <ul>
-       <li><a href="./index.html"></a>Home</li>
-       <li><a href="./donate.html"></a>Donate</li>
-       <li><a href="./contact.html"></a>Contact</li>
+       <li><a href="./index.html">Home</a></li>
+       <li><a href="./donate.html">Donate</a></li>
+       <li><a href="./contact.html">Contact</a></li>
     </ul>
     <!-- <i class ="fa fa-bars fa-lg" ></i> -->
  </nav>
@@ -77,94 +77,99 @@
 
   <div class="donor-section">
         
-
-        <div>
-          <label for="fname">Name:</label>
-          <input type="text" id="fname" name="firstname" required />
+    <div class="row">
+        <div class="column">
+          <label for="fname">First Name:</label>
+          <input type="text"  name="fname" required />
+         </div>
+        
+        <div class="column">
+          <label for="lname">Last Name:</label>
+          <input type="text"  name="lname" required />
         </div>
-  
-    
+    </div>
 
-        <div>
+    <div class="row">
+        <div class="column">
           <label for="email">Email:</label>
-          <input  type="Email" name="email" id="email" required>
+          <input  type="Email" name="email" required>
         </div>
 
-        <div>
-          <label for="">Address:</label>
-          <input  type="text" name="" id="">
+        <div class="column">
+          <label for="address">Address:</label>
+          <input  type="text" name="address">
         </div>
+    </div>
 
-    
-        <div>
+    <div class="row">
+          <div class="column">
            <label for="city">City:</label>
-           <input type="text" id="city" name="city"  />
-        </div>
+           <input type="text" name="city"  />
+          </div>
 
-      
-        <div>
+          <div class="column">
            <label for="state">State:</label>
-           <input type="text" id="state" name="state" />
-        </div>
-    
-    
-        <div>
-           <label for="zipCode">Zip Code:</label>
-           <input type="text" id="zipCode" name="zip code" />
-        </div>
+           <input type="text" name="state" />
+         </div>
+   </div>
 
-       <div>
-          <label for="phone">Phone (Optional) </label>
-          <input type="text" name="" id="phone">
-       </div>
+    <div class="row">
+          <div class="column">
+           <label for="zip">Zip Code:</label>
+           <input type="number" name="zip" />
+          </div>
+          
+          <div class="column">
+          <label for="phone">Phone: </label>
+          <input type="number" name="phone" >
+          </div>
+    </div>
+       
   </div>
 
  
     <!--donation information-->
-
-  <div class="donation-info">
+<div class="donation-info">
     <h2>Donation information</h2>
     <h4 >*Gift Amount</h4>
 
-   <div class="space">
-     <input type="radio" id="money"   value="fiveHun"   name="money"><span> </span><label for="fiveHun">$500</label><br>
-     <input type="radio" id="money" value="oneHun"    name="money"><span> </span><label for="oneHun">$100</label><br>
-     <input type="radio" id="money" value="fifth"     name="money"><span> </span><label for="fifth">$50</label><br>
-     <input type="radio" id="money" value="twentyFive"name="money"><span> </span><label for="twentyFive">$25</label><br>
-     <input type="radio" id="money" value="upto"      name="money"><span> </span><label for="upto">Other</label>
-     <input class="putAmount" name ="other-input" id="other-input"  type="text"><br>
-   </div>
+     <div><input type="radio" id="money"   value="fiveHun"   name="money"><span> </span><label for="fiveHun">$500</label></div>
+     <div><input type="radio" id="money" value="oneHun"    name="money"><span> </span><label for="oneHun">$100</label></div>
+     <div><input type="radio" id="money" value="fifth"     name="money"><span> </span><label for="fifth">$50</label></div>
+     <div><input type="radio" id="money" value="twentyFive"name="money"><span> </span><label for="twentyFive">$25</label></div>
+     <div><input type="radio" id="money" value="upto"      name="money"><span> </span><label for="upto">Other</label><br><input class="putAmount" name ="other-input" id="other-input"  type="text"></div>
+     
+   
       
-   <div class= "monthlyOrOneTime">
+     <div class= "monthly-or-onetime">
        <label for="">Is this a one-time gift or a monthly donation?</label><br>
-       <select name="monthlyDona" id="dropdown" class="dropDownMonthly">
+       <select name="monthly-donation" id="dropdown" class="dropDownMonthly">
          <option value="nothing" selected></option>
          <option value="one-time">One-time</option>
          <option value="monthly">Monthly</option>
        </select>
-    </div>  
+     </div>  
  </div>
 
 
  <div class="payment">
     <h2>Payment</h2>
 
-    <div class="space">
-      <input type="radio" id="credit" name="payment"><span> </span><label for="credit">Credit</label><br>
-      <input type="radio" id="bank" name="payment"><span> </span><label for="bank">Bank</label><br>
-      <input type="radio" id="paypal" name="payment"><span> </span><label for="paypal">Paypal</label><br>
-    </div>
+   
+      <div><input type="radio" id="credit" name="payment"><span> </span><label for="credit">Credit</label></div>
+      <div><input type="radio" id="bank" name="payment"><span> </span><label for="bank">Bank</label></div>
+      <div><input type="radio" id="paypal" name="payment"><span> </span><label for="paypal">Paypal</label></div>
+   
 
-   <div class="creditSpace">
-    <label for="creditCard">Credit Card Number:</label>
-    <input type="password" id="creditCard" maxlength ="16" class="creditCard" required>
-   </div>
+    <div class="creditSpace">
+      <label for="creditCard">Credit Card Number</label><br>
+      <input type="password" id="creditCard" maxlength ="16" class="creditCard" required>
+     </div>
 
 
     
-
-    <div id="expireMonthYear">
-     <label for="">Expiration Date</label>
+    <div id="expire-month-year">
+     <label for="">Expiration Date:</label>
 
      <select name="month" id="dropdown">
         <option value="nothing" selected>month</option>
@@ -200,13 +205,36 @@
       <input type="text"  maxlength ="3" name="cvv" id="cvv" data-validation="number" data-validation-error-msg="Enter 3 digit CVV" required>
     </div>
 
-     <div class="button">
-       <button class="btn">Donate</button>
+     <div class="donate-button">
+       <button>Donate</button>
      </div>
 
   </div>
 </form>
 
+
+
+<div id="footer">
+   <div class="footer-deco">
+      <h3>REPORT PET</h3>
+      <p>You can post a lost or found report for any special of pet in our database.</p>
+      <p>Made with <i class="fa-solid fa-heart"></i> by Noon</p>
+   </div>
+ 
+
+ 
+   <div class="footer-deco">
+    <h3>FOLLOW US</h3>
+    <div class="social-icons">
+    <a href="https://www.facebook.com/nunnyzill" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/zvnoonny/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com/FitzgeraldNoon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+ 
+   
+ </div>
+ 
 
   </body>
 </html>

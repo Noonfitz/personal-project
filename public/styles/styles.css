@@ -46,17 +46,22 @@ body{
     cursor: pointer;
 }
 
-.nav-bar li:visited {
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar a:visited {
     text-decoration: none;
     color: var(--white);
 }
 
-.nav-bar li:hover {
+.nav-bar a:hover {
     color: var(--light-orange);
     font-weight: bold;
 }
 
-.nav-bar li:active {
+.nav-bar a:active {
+   text-decoration: none;
     font-weight: bold;
     color : var(--bone);
 }
@@ -137,13 +142,218 @@ body{
 #form-donation h2 {
     color: var(--blue);
     text-align: center;
+   
 }
 
+.donor-section { 
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ margin: 0 50px;
+ 
   
-    
+}
+
+.donor-section .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,2fr));
+  grid-gap: 8px 10px;
+  
+}
+
+.donor-section input[type="text"], .donor-section input[type="email"], .donor-section input[type="number"] {
+  width:100%;
+  padding: 4px 8px;
+  margin:5px auto;
+  border-radius: 4px;
+  border: 1.5px solid var(--blue);
+  
+}
+
+.donor-section input:focus {
+  outline: none;
+  border-color: var(--bone);
+}
+
+
+
+.donor-section .column {
+  width:60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.donor-section label {
+  display: flex;
+
+}
+
+.donation-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin: 0 auto;
+
+}
+
+.donation-info div {
+  margin : 5px 0;
+}
+
+.putAmount {
+  width: 70px;
+  margin-left:20px;
+}
+
+select[name="monthly-donation"] {
+  width: 300px;
+  padding:2px 0;
+}
+
+.donation-info h4 {
+  margin-top: 0;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+ padding-bottom: 30px;
+ max-width: 70%;
+margin:0 auto;
+ 
+}
+
+.payment div {
+  margin: 5px 0;
+}
+
+select[name="month"], select[name="year"] {
+ width: 90px;
+ padding: 2px 0;
+}
+
+.donate-button button{
+  border: none;
+  background: rgb(62,148,132);
+  background: linear-gradient(21deg, rgba(62,148,132,1) 1%, rgba(102,159,110,1) 84%);
+  color: var(--white);
+  padding:8px 15px;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+
+
+.cvv input{
+  width: 60px;
+}
  
    
  
       /*donation information */
   
     
+
+/* contact.html */
+
+.linear-background {
+  height:70vh;
+  width: 100vw;
+  background: rgb(105,162,151);
+background: linear-gradient(180deg, rgba(105,162,151,1) 0%, rgba(163,201,168,1) 55%, rgba(221,216,196,1) 100%);
+}
+
+.container {
+  background: var(--white);
+  width: 73%;
+  min-width: 400px;
+  max-width: 800px;
+  padding: 30px 60px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top:50%; 
+  border-radius: 10px;
+  
+}
+
+.container h1 {
+  text-align: center;
+  margin:5px;
+  
+}
+
+.container p {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin:auto;
+
+}
+
+.container form {
+  position: relative;
+  width:100%;
+  margin: 20px auto 0 auto;
+
+}
+
+ .container .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 10px 30px;
+  margin-bottom: 15px;
+}
+
+.container textarea,.container input[type="text"], .container input[type="email"] {
+  width:100%;
+  padding: 7px 8px;
+  margin:5px auto;
+  border-radius: 4px;
+  border : 2px solid var(--blue);
+}
+
+.container textarea:focus, .container input:focus{
+  outline: none;
+  border-color: var(--bone);
+}
+
+.container button {
+  border: none;
+  background: rgb(62,148,132);
+background: linear-gradient(21deg, rgba(62,148,132,1) 1%, rgba(102,159,110,1) 84%);
+color: var(--white);
+padding:8px 15px;
+border-radius: 4px;
+}
+
+.btn {
+  text-align: center;
+}
+
+
+/* footer */
+#footer{
+  background: rgb(163,201,168);
+  background: linear-gradient(3deg, rgba(163,201,168,1) 0%, rgba(221,216,196,1) 63%);
+  padding-top:9px;
+  text-align: center;
+  padding-bottom: 50px;
+ 
+}
+
+.footer-deco h3 {
+  color: #628393;
+}
+
+.footer-deco p {
+  margin: 0 20px;
+}
+.fa-heart {
+  color:red;
+}
+
+.fa-brands {
+  margin: 0 8px;
+}
