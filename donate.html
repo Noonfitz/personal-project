@@ -73,10 +73,10 @@
 <!--personal info-->
 
 <form id ="form-donation" action="./submit.html" method ="post" >
-    <h2>Personal information</h2>
+    
 
   <div class="donor-section">
-        
+    <h2>Personal information</h2>
     <div class="row">
         <div class="column">
           <label for="fname">First Name:</label>
@@ -94,35 +94,42 @@
           <label for="email">Email:</label>
           <input  type="Email" name="email" required>
         </div>
-
+        
         <div class="column">
-          <label for="address">Address:</label>
-          <input  type="text" name="address">
-        </div>
+          <label for="phone">Phone: </label>
+          <input type="number" name="phone" >
+          </div>
+
     </div>
 
     <div class="row">
+           
+      <div class="column">
+        <label for="address">Address:</label>
+        <input  type="text" name="address">
+      </div>
+
           <div class="column">
            <label for="city">City:</label>
            <input type="text" name="city"  />
           </div>
 
-          <div class="column">
-           <label for="state">State:</label>
-           <input type="text" name="state" />
-         </div>
    </div>
 
     <div class="row">
+
+      <div class="column">
+        <label for="state">State:</label>
+        <input type="text" name="state" />
+      </div>
+
+
           <div class="column">
            <label for="zip">Zip Code:</label>
            <input type="number" name="zip" />
           </div>
           
-          <div class="column">
-          <label for="phone">Phone: </label>
-          <input type="number" name="phone" >
-          </div>
+          
     </div>
        
   </div>
