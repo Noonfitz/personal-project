@@ -8,7 +8,7 @@
      <!--CSS-->
      <link rel="stylesheet" type="text/css" href="public/styles/styles.css">
      <!--script -->
-     <script defer src="script.js"></script>
+     <script defer src="script.js"></script> 
      <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2052615864.js" crossorigin="anonymous"></script>
     <!-- google font -->
@@ -19,13 +19,13 @@
 
 
   <nav class="nav-bar">
-    <a href="./index.html"><img src="./public/images/logo.jpg" alt="logo-report-pet"></a> 
-    <ul>
+    <a  href="./index.html"><img class="logo" src="./public/images/logo.jpg" alt="logo-report-pet" class="logo"></a> 
+    <ul class="link-bar">
        <li><a href="./index.html">Home</a></li>
        <li><a href="./donate.html">Donate</a></li>
        <li><a href="./contact.html">Contact</a></li>
     </ul>
-    <!-- <i class ="fa fa-bars fa-lg" ></i> -->
+    <i class ="fa fa-bars fa-2xl"></i>
  </nav>
 
 
@@ -36,7 +36,7 @@
   </div>
 
 
-<div class="donate-amount">
+<section class="donate-amount">
     <h2>Give Now to Help Animals in Need!</h2>   
 
     <div class="animalNeed">
@@ -66,7 +66,7 @@
       
 
     </div>
-</div>
+</section>
 
 
 
@@ -75,7 +75,7 @@
 <form id ="form-donation" action="./submit.html" method ="post" >
     
 
-  <div class="donor-section">
+  <section class="donor-section">
     <h2>Personal information</h2>
     <div class="row">
         <div class="column">
@@ -97,7 +97,7 @@
         
         <div class="column">
           <label for="phone">Phone: </label>
-          <input type="number" name="phone" >
+          <input type="text" name="phone" >
           </div>
 
     </div>
@@ -126,17 +126,17 @@
 
           <div class="column">
            <label for="zip">Zip Code:</label>
-           <input type="number" name="zip" />
+           <input type="text" name="zip" />
           </div>
           
           
     </div>
        
-  </div>
+  </section>
 
  
     <!--donation information-->
-<div class="donation-info">
+<section class="donation-info">
     <h2>Donation information</h2>
     <h4 >*Gift Amount</h4>
 
@@ -156,10 +156,10 @@
          <option value="monthly">Monthly</option>
        </select>
      </div>  
- </div>
+ </section>
 
 
- <div class="payment">
+ <section class="payment">
     <h2>Payment</h2>
 
    
@@ -216,7 +216,7 @@
        <button>Donate</button>
      </div>
 
-  </div>
+ </section>
 </form>
 
 
