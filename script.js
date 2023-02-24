@@ -8,11 +8,11 @@ menuBtn.addEventListener("click",function(){
 });
 
 
-var radioCount = 1;
+var radioCount = 2;
 setInterval(function(){
     document.getElementById("radio" + radioCount).checked = true;
     radioCount++;
     if(radioCount > 5){
-        radioCount = 1;
+        radioCount = 2;
     }
 },3000);

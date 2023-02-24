@@ -1,5 +1,4 @@
 
-
 * {
  box-sizing: border-box;
 }
@@ -78,13 +77,13 @@ body{
 }
 
 /* index.html */
-#first-impress-pics {
-  height: 80vh;
+
+ #first-impress-pics {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: rgb(105,162,151);
-  background: linear-gradient(180deg, rgba(105,162,151,1) 0%, rgba(163,201,168,1) 55%, rgba(221,216,196,1) 100%); */
+  margin-top: 50px;
 }
 
 .slide img{
@@ -92,7 +91,7 @@ body{
   height: 500px;
 }
 .slide-pics {
-  width:800px;
+  max-width:800px;
   height:500px;
   border-radius: 10px;
   overflow: hidden;
@@ -161,7 +160,7 @@ justify-content: center;
 
      /* auto nav */
   .auto-slide {
-    position: absolute;
+    position:absolute;
     display: flex;
     width: 800px;
     justify-content: center;
@@ -198,6 +197,8 @@ justify-content: center;
   #radio5:checked ~ .auto-slide .btn5-auto {
     background-color: var(--blue-green);
   }
+ 
+
 /* donate.html */
 
   .bio{
@@ -527,10 +528,8 @@ border-radius: 4px;
      display: block;
      color: #FFFFFF;
      margin-top:30px;
-     margin-right: 10px;
-      
+     margin-right: 10px;  
  }
-
 
  .container{ 
   position: relative;
@@ -541,7 +540,47 @@ border-radius: 4px;
   font-size: 1.2em;
  }
 
+ .slide-pics , .slides {
+  position: relative;
+  height:500px;
+}
+
+
+.slide img{
+  max-width:600px;
+
+}
+.slide-pics {
+  max-width: 600px;
+  height:400px;
+}
+
+ .navigation-manual {
+  position:absolute;
+  display: flex;
+  max-width: 100%;
+  margin-top:-50px;
  
+
+}
+
+.auto-slide{
+ position:absolute; 
+  display:flex;
+  width: 600px;
+  margin-top: 370px; 
+} 
+
+.slides {
+  width:500%;
+  height: 420px;
+}
+
+#first-impress-pics {
+  margin-top:50px;
+  height: 100%;
+  
+}
 
  .linear-background {
   height:80vh;
