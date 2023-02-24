@@ -7,3 +7,12 @@ menuBtn.addEventListener("click",function(){
     logoBtn.classList.toggle('logo-none');
 });
 
+
+var radioCount = 1;
+setInterval(function(){
+    document.getElementById("radio" + radioCount).checked = true;
+    radioCount++;
+    if(radioCount > 5){
+        radioCount = 1;
+    }
+},3000);
