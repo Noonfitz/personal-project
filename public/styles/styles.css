@@ -78,6 +78,32 @@ body{
 
 /* index.html */
 
+.header img {
+width:100vw;
+position: relative;
+
+  
+}
+
+.text-header {
+  text-align: center;
+  margin:40px;
+}
+
+.text-header h1{
+  margin:10px;
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.text-header p {
+  font-style: italic;
+  font-weight: bold;
+
+}
+
+
  #first-impress-pics {
   height: 100%;
   display: flex;
@@ -95,6 +121,7 @@ body{
   height:500px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow:7px 5px 5px var(--blue);
 }
 
 .slides {
@@ -111,6 +138,29 @@ body{
   width:20%;
   transition: 2s;
 }
+
+.advice-section{
+  text-align: center;
+  
+}
+
+.advice-section h1{
+  margin: 50px 0 30px 0;
+}
+
+.advice-row{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+ .advice-row .box{
+  width: calc(600px - 30px);
+  height: calc(270px - 30px);
+  background: var(--light-green);
+  margin:15px;
+
+} 
 
     /* manual */
 .navigation-manual {
@@ -638,4 +688,28 @@ border-radius: 4px;
 }
 
 
+}
+
+@media screen and (max-width:600px) {
+
+  .slide img{
+    max-width:400px;
+  
+  }
+  .slide-pics {
+    max-width: 400px;
+    height:400px;
+  }
+
+  .navigation-manual {
+    max-width: 100%;
+    margin-top:-100px;
+   
+  
+  }
+  
+  .auto-slide{
+    width: 400px;
+    margin-top: 320px; 
+  } 
 }
