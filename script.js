@@ -8,7 +8,7 @@ menuBtn.addEventListener("click",function(){
 });
 
 
-var radioCount = 2;
+let radioCount = 2;
 setInterval(function(){
     document.getElementById("radio" + radioCount).checked = true;
     radioCount++;
@@ -16,3 +16,6 @@ setInterval(function(){
         radioCount = 2;
     }
 },3000);
+
+
+

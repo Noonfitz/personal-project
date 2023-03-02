@@ -5,10 +5,10 @@
 body{
     width: 100%;
     min-height: 100vh;
-    margin:0;
+    margin:0 ;
     padding:0;
     overflow-x:hidden;
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
 }
 
 :root {
@@ -41,7 +41,7 @@ body{
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
-    margin: 20px 30px;
+     margin: 20px 30px; 
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -78,21 +78,24 @@ body{
 
 /* index.html */
 
+.link-bar {
+  margin-top:16px;
+}
 .header img {
 width:100vw;
 position: relative;
-
-  
 }
+
 
 .text-header {
   text-align: center;
   margin:40px;
 }
 
+
 .text-header h1{
   margin:10px;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   color: var(--blue);
 }
@@ -100,7 +103,6 @@ position: relative;
 .text-header p {
   font-style: italic;
   font-weight: bold;
-
 }
 
 
@@ -112,10 +114,12 @@ position: relative;
   margin-top: 50px;
 }
 
+
 .slide img{
   width:800px;
   height: 500px;
 }
+
 .slide-pics {
   max-width:800px;
   height:500px;
@@ -124,11 +128,13 @@ position: relative;
   box-shadow:7px 5px 5px var(--blue);
 }
 
+
 .slides {
   width:500%;
   height: 500px;
   display: flex;
 }
+
 
 .slides input {
   display: none;
@@ -141,26 +147,44 @@ position: relative;
 
 .advice-section{
   text-align: center;
-  
 }
 
 .advice-section h1{
   margin: 50px 0 30px 0;
 }
 
-.advice-row{
+/* .advice-row{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-}
+} */
 
- .advice-row .box{
+ /* .advice-row .box{
   width: calc(600px - 30px);
   height: calc(270px - 30px);
   background: var(--light-green);
   margin:15px;
 
-} 
+}  */
+.fa-solid{
+  margin-bottom : 25px;
+}
+
+.box{
+  text-align: center;
+  padding: 30px;
+}
+
+.fa-solid{
+  color: var(--blue);
+}
+
+.fa-solid:hover {
+  color:var(--light-orange);
+}
+.box p {
+  margin: 0 auto;
+}
 
     /* manual */
 .navigation-manual {
@@ -453,12 +477,12 @@ select[name="month"], select[name="year"] {
 background: linear-gradient(180deg, rgba(105,162,151,1) 0%, rgba(163,201,168,1) 55%, rgba(221,216,196,1) 100%);
 }
 
-.container {
+.contact-box {
   background: var(--white);
   width: 73%;
   min-width: 400px;
   max-width: 800px;
-  padding: 30px 60px;
+  padding: 25px 50px;
   position: absolute;
   transform: translate(-50%,-50%);
   left:50%;
@@ -467,13 +491,13 @@ background: linear-gradient(180deg, rgba(105,162,151,1) 0%, rgba(163,201,168,1) 
   
 }
 
-.container h1 {
+.contact-box h2 {
   text-align: center;
   margin:5px;
   
 }
 
-.container p {
+.contact-box p {
   position: relative;
   width: 100%;
   text-align: center;
@@ -481,45 +505,73 @@ background: linear-gradient(180deg, rgba(105,162,151,1) 0%, rgba(163,201,168,1) 
 
 }
 
-.container form {
+.contact-box form {
   position: relative;
   width:100%;
-  margin: 20px auto 0 auto;
-
+  margin: 15px auto 0 auto;
 }
 
- .container .row {
+
+
+
+ .contact-box .row {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  grid-gap: 10px 30px;
+  grid-gap: 7px 25px;
   margin-bottom: 15px;
 }
 
-.container textarea,.container input[type="text"], .container input[type="email"] {
+.contact-box textarea,.contact-box input[type="text"], .contact-box input[type="email"] {
   width:100%;
-  padding: 7px 8px;
+  padding: 5px 8px;
   margin:5px auto;
   border-radius: 4px;
   border : 2px solid var(--blue);
 }
 
-.container textarea:focus, .container input:focus{
+.contact-box textarea:focus, .contact-box input:focus{
   outline: none;
   border-color: var(--bone);
 }
 
-.container button {
+.contact-box button {
   border: none;
   background: rgb(62,148,132);
 background: linear-gradient(21deg, rgba(62,148,132,1) 1%, rgba(102,159,110,1) 84%);
 color: var(--white);
-padding:8px 15px;
+padding:8px 15px; 
 border-radius: 4px;
+
 }
 
-.btn {
+.submit-button {
   text-align: center;
+}
+
+
+
+/* cat-action,html , dog-action, found-pet, other-lost-pet */
+
+.suggest-cat h1{
+  text-align: center;
+  margin: 40px auto;
+}
+.suggest-cat li{
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.suggest-dog , .suggest-cat{
+  margin-bottom: 50px;
+}
+.suggest-dog h1{
+  text-align: center;
+  margin: 40px auto;
+}
+
+.suggest-dog h3 {
+  margin: 30px auto;
 }
 
 
@@ -529,12 +581,13 @@ border-radius: 4px;
   background: linear-gradient(3deg, rgba(163,201,168,1) 0%, rgba(221,216,196,1) 63%);
   padding-top:9px;
   text-align: center;
-  padding-bottom: 50px;
+  padding: 40px 0px;
 
 }
 
 .footer-deco h3 {
   color: #628393;
+  font-size: 1.3rem;
 }
 
 .footer-deco p {
@@ -545,8 +598,9 @@ border-radius: 4px;
 }
 
 .fa-brands {
-  margin: 0 8px;
+  margin: 20px 8px;
 }
+
 
 
 /* for tablet view */
