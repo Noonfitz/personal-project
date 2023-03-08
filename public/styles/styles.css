@@ -18,6 +18,8 @@ body{
     --light-green : #A3C9A8;
     --bone:  #DDD8C4;
     --light-orange: #FEBE8C;
+    --light-purple:#cfcfd7;
+    --puple:#9691a5;
     --font-size: 1.4rem;
     --font-family:'Open Sans', sans-serif;
 }
@@ -35,7 +37,9 @@ body{
     width:140px;
 }
 
-
+.drop-down-navbar{
+  background-color: var(--blue);
+}
 .nav-bar li {
     color: var(--white);
     text-decoration: none;
@@ -145,27 +149,47 @@ position: relative;
   transition: 2s;
 }
 
+
+.lost-and-found {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+ .lost-and-found a {
+  text-decoration: none;
+} 
+
+
+.lost-found{
+ font-weight: bold;
+ font-size: 1.5em;
+ border-radius: 10px;
+margin:10px 20px;
+padding: 30px;
+background: rgb(62,148,132);
+background: linear-gradient(21deg, rgba(62,148,132,1) 1%, rgba(102,159,110,1) 84%);
+color: var(--white);
+  
+}
+
+.lost-found:hover{
+  color: var(--light-orange);
+  font-weight: bold;
+}
 .advice-section{
   text-align: center;
 }
 
 .advice-section h1{
-  margin: 50px 0 30px 0;
+  margin:60px 10px 20px 10px;
+ font-size: 2em;
+  font-weight: bold;
+  color: var(--blue);
 }
 
-/* .advice-row{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-} */
 
- /* .advice-row .box{
-  width: calc(600px - 30px);
-  height: calc(270px - 30px);
-  background: var(--light-green);
-  margin:15px;
-
-}  */
 .fa-solid{
   margin-bottom : 25px;
 }
@@ -175,11 +199,17 @@ justify-content: center;
   padding: 30px;
 }
 
-.fa-solid{
-  color: var(--blue);
+.box h3{
+  font-size: 1.5em;
 }
 
-.fa-solid:hover {
+.fa-solid , .advice-deco{
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.fa-solid:hover , .advice-deco:hover{
   color:var(--light-orange);
 }
 .box p {
@@ -456,6 +486,11 @@ select[name="month"], select[name="year"] {
   margin-top: 25px;
 }
 
+.donate-button button:hover {
+  color: var(--light-orange);
+  font-weight: bold;
+}
+
 
 
 .cvv input{
@@ -466,7 +501,17 @@ select[name="month"], select[name="year"] {
  
       /*donation information */
   
-    
+  /* report.html */
+
+.report-pet {
+  margin-bottom: 50px;
+}
+  .report-pet h1{
+    text-align: center;
+    margin: 30px 0px;
+    color: var(--blue);
+    font-weight: bold;
+  }
 
 /* contact.html */
 
@@ -494,7 +539,18 @@ background: linear-gradient(180deg, rgba(105,162,151,1) 0%, rgba(163,201,168,1) 
 .contact-box h2 {
   text-align: center;
   margin:5px;
+   font-weight: bold;
+   color: var(--blue);
   
+}
+
+.contact-box #error{
+  margin: 5px 0px;
+  padding:0px;
+  background-color:lightcoral;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.5s ease;
 }
 
 .contact-box p {
@@ -545,6 +601,11 @@ border-radius: 4px;
 
 }
 
+.contact-box button:hover{
+  color: var(--light-orange);
+  font-weight: bold;
+}
+
 .submit-button {
   text-align: center;
 }
@@ -575,6 +636,71 @@ border-radius: 4px;
 }
 
 
+/* login */
+
+.well{
+  background-color:whitesmoke;
+  border-radius: 10px;
+  border:var(--blue) solid 1px;
+}
+
+.well.login-box {
+  /*width:400px; */
+  border:#d1d1d1 solid 1px;
+  margin:60px auto;
+  padding: 10px 20px 30px 20px;
+  
+}
+.well.login-box h3 {
+text-align:center;
+font-weight:bold;
+color: var(--blue);
+margin: 20px 0px;
+}
+.well.login-box label {
+font-size: 1.1em;
+margin:8px 0px;
+
+
+}
+.well.login-box input[type="text"] {
+box-shadow:none;
+border-color:#ddd;
+border-radius:0;
+}
+
+.well.welcome-text{
+  font-size:21px;
+}
+
+.form-group .btn {
+  background-color: var(--blue-green);
+  margin-bottom: 20px;
+
+}
+
+.pattern-button {
+  border: none;
+  background: rgb(62,148,132);
+  background: linear-gradient(21deg, rgba(62,148,132,1) 1%, rgba(102,159,110,1) 84%);
+  color: var(--white);
+  padding:8px 15px;
+  border-radius: 4px;
+ text-decoration: none;
+}
+
+.pattern-button:hover {
+  color: var(--light-orange);
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
 /* footer */
 #footer{
   background: rgb(163,201,168);
@@ -588,6 +714,7 @@ border-radius: 4px;
 .footer-deco h3 {
   color: #628393;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .footer-deco p {

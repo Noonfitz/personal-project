@@ -27,7 +27,7 @@
        <ul class="link-bar">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./donate.html">Donate</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./login.html">Log IN</a></li>
        </ul>
        <i class ="fa fa-bars fa-2xl" ></i>
 </nav>
@@ -37,18 +37,21 @@
    <div class="contact-box">
      <h2>CONTACT US</h2>
      <p>Have any questions? Drop us a message</p>
+     <div id="error"></div>
 
-     <form action="#"> 
+     <form action="#" onsubmit="return validate()" > 
 
       <div class="row">
         <div class="column">
          <label for="name">Name</label>
          <input type="text" id="name" placeholder="Your name here">
+      
         </div>
 
         <div class="column">
          <label for="email">E-mail</label>
          <input type="text" id="email" placeholder="Your e-mail here">
+         
         </div>
 
       </div>
@@ -58,11 +61,13 @@
         <div class="column">
          <label for="subject">Subject</label>
          <input type="text" id="subject" placeholder="Your subject here">
+        
         </div>
 
         <div class="column">
          <label for="phone">Contact Number</label>
          <input type="text" id="phone" placeholder="Your phone number here">
+         
         </div>
 
       </div> 
@@ -71,6 +76,7 @@
         <div class="column">
          <label for="message">Message Us</label>
          <textarea id="message"  rows= "4" placeholder="Describe your issue in detail here"></textarea>
+        
          </div>
       </div>
         
