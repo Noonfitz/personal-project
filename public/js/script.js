@@ -10,7 +10,7 @@ menuBtn.addEventListener("click",function(){
 });
 
 
-//for index.html (picture move with raio button)
+//for index.html (picture move with ratio button)
 let radioCount = 1;
 setInterval(function(){
     document.getElementById("radio" + radioCount).checked = true;
@@ -19,6 +19,7 @@ setInterval(function(){
         radioCount = 1;
     }
 },3000);
+
 
 
 
