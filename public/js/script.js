@@ -11,14 +11,17 @@ menuBtn.addEventListener("click",function(){
 
 
 //for index.html (picture move with ratio button)
-let radioCount = 1;
+let radioCountForward = 1;
 setInterval(function(){
-    document.getElementById("radio" + radioCount).checked = true;
-    radioCount++;
-    if(radioCount > 5){
-        radioCount = 1;
+    document.getElementById("radio" + radioCountForward).checked = true;
+    radioCountForward++;
+    if(radioCountForward > 5){
+        radioCountForward = 1;
     }
-},3000);
+  
+},5000);
+
+
 
 
 

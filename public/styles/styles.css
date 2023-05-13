@@ -99,14 +99,17 @@ position: relative;
 
 .text-header h1{
   margin:10px;
-  font-size: 2em;
+ 
   font-weight: bold;
   color: var(--blue);
+
 }
 
-.text-header p {
-  font-style: italic;
-  font-weight: bold;
+.text-header h2 {
+  margin: 0 50px 0 50px;
+  font-size: 1.4em;
+  text-align: center;
+  font-style:italic;
 }
 
 
@@ -349,7 +352,7 @@ justify-content: center;
 
   .donate-content {
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width:300px;
   }
 
@@ -838,8 +841,11 @@ border-radius:0;
  margin-top:-900px;  /* make the nav-bar go at the top*/
  transition-duration: 1s;
  transition-timing-function: ease-in-out;
+ padding:0;
  
 }
+
+
 
 .logo-none{
   display:none;
