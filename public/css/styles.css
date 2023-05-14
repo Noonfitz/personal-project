@@ -82,6 +82,7 @@ body{
 
 /* index.html */
 
+
 .link-bar {
   margin-top:16px;
 }
@@ -638,6 +639,116 @@ border-radius: 4px;
   margin: 30px auto;
 }
 
+/* search */
+
+.pet-details {
+  padding-top:30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+.pet-details .search-type {
+  width: 200px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px
+}
+
+
+.pet-details img {
+  width: 210px;
+  height: 300px;
+}
+
+
+.lost-pet {
+  width:80%;
+  font-family: var(--font-family-other);
+  margin: 25px auto 60px;
+  background-color: var(--white);
+
+  padding: 40px;
+  
+}
+
+ .lost-pet h1 {
+  text-align: center;
+  color: var(--blue);
+  font-family: var(--font-family);
+}
+
+.pet-individual .detail-link {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.pet-individual .detail-link:visited {
+  color: var(--blue);
+}
+
+.pet-individual .detail-link:hover {
+  color: var(--teal);
+  font-weight: bold;
+}
+
+.pet-individual .detail-link:active {
+  color: var(--blue);
+  font-weight: bold;
+  background-color: var(--yellow);
+}
+
+/* pet-detail */
+
+.top-section {
+   border-bottom-left-radius:26px;   
+  border-top-left-radius: 26px;
+  padding: 0 60px;  
+}
+
+
+.top-section h3 {
+  font-family: var(--font-family);
+  margin:0;
+  padding:30px 0;
+  text-align: center;
+  color: var(--yellow) ;
+ font-size: 1.1em;   
+}
+
+.img-pet {
+  text-align: center;
+}
+
+.img-pet img {
+border-radius: 20px;
+width:250px;
+height:400px;  
+border: solid var(--bone) 3px;
+box-shadow: black;
+margin-top:30px;   
+
+}
+
+
+
+.bottom-section {
+  padding: 10px 30px;  
+  background-color: var(--white);
+  border-bottom-right-radius: 26px;
+  border-top-right-radius: 26px;  
+  font-family: var(--font-family-other);
+  font-size: 0.95em;  
+ 
+}
+
+.bottom-section span {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 /* login */
 
@@ -650,8 +761,8 @@ border-radius: 4px;
 .well.login-box {
   /*width:400px; */
   border:#d1d1d1 solid 1px;
-  margin:60px auto;
-  padding: 10px 20px 30px 20px;
+  margin:90px auto;
+  padding: 50px 30px 50px 30px;
   
 }
 .well.login-box h3 {

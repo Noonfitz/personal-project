@@ -1,0 +1,32 @@
+<%- include('../partials/head') -%>
+
+ 
+<%- include('../partials/nav') -%>
+
+
+<div class="top-section">  
+    <div class="img-pet"> 
+       <img  src="/images/<%= foundPet.image %>" alt="one-piece-picture">
+    </div> 
+</div>
+
+<div class="bottom-section">
+   <p><span>Status:</span><em><%= foundPet.type %></em></p>
+   <p><span>Date on which the pet was lost or found:</span> <%= foundPet.date %></p>
+   <p><span>Breed/Description:</span> <%= foundPet.breed %></p>
+   <p><span>Address:</span> <%= foundPet.address %></p>
+   <p><span>Gender:</span> <%= foundPet.gender %></p>
+   <p><span>Approximate age:</span> <%= foundPet.age %></p>
+   <p><span>Colors:</span> <%= foundPet.color %></p>
+   <p><span>Weight:</span> <%= foundPet.weight %></p>
+   <p><span>Length of hair:</span> <%= foundPet.hair %></p>
+   <p><span>pet's collar:</span> <%= foundPet.DesCollar %></p>
+   <p><span>Additional:</span> <%= foundPet.addition %></p>
+</div>
+
+
+</div>
+</div>
+
+
+<%- include('../partials/footer') -%>

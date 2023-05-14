@@ -1,0 +1,27 @@
+<%- include('../partials/head') -%>
+
+ 
+<%- include('../partials/nav') -%>
+
+
+    <div class="lost-pet">
+      <h1>Search Our Database Of Lost And Found Pet Report</h1>
+      
+      <div class="pet-details">
+ 
+  <% for(pet of petsArray) { %>
+   
+    <div class="pet-individual"> 
+      <a href="/search/<%=pet._id %>"><img src="/images/<%= pet.image %>" alt="<%= pet.breed %>"></a>
+      <p class="search-type"><%= pet.type %><br><%= pet.breed %><br><a href="/search/<%=pet._id %>"class="detail-link">Details</a></p>
+    </div>
+
+   <% } %>
+
+      </div>
+      </div>
+ 
+
+
+
+<%- include('../partials/footer') -%>
