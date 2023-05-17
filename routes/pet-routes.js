@@ -9,7 +9,8 @@ router.route('/')
 router.route('/:_id')
 .get(petsCtrl.pet_detail)
 
-
+router.route('/report')
+.get(petsCtrl.reportPet)
 
 
 module.exports = router;

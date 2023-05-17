@@ -18,6 +18,9 @@ module.exports = {
 
 },
 
+reportPet: (request,response) => {
+    response.render('pages/report');
+  }
 
 }
 

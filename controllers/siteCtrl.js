@@ -1,3 +1,4 @@
+const { response, request } = require("express");
 
 module.exports = {
   index: (request, response) => {
@@ -27,4 +28,10 @@ module.exports = {
   foundPet: (request, response) => {
     response.render('pages/found-pet');
   },
+
+  donate: (request, response) => {
+    response.render('pages/donate');
+  }
+
+
 }

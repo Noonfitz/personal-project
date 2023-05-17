@@ -24,4 +24,7 @@ router.route('/found-pet')
   .get(siteCtrl.foundPet);
 
 
+router.route('/donate')
+ .get(siteCtrl.donate);
+
 module.exports = router;
