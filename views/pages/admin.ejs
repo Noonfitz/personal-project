@@ -3,10 +3,60 @@
  
 <%- include('../partials/nav') -%>
 
-    <h1>Admin Page</h1>
+<div class="background-page">
+    <div class="admin-content">
+       
+        <h1>ADMIN PAGE</h1>
+        <button  type="submit" name="addnew" class= "centered-button" ><a class="create-link" href = "/admin/report">Report a Lost/Found Pet</a></button><br>
+        <button  type="submit" name="logout" class= "centered-button" ><a class="create-link" href = "/">Logout</a></button>
+        
+        <div style="overflow-x: auto;">
+        <table class="admin-comic">
+          <thead>
+            <tr>
+              <th class="pet-breed"><b>PET BREED</b></th>
+              <th><b>EDIT</b></th>
+              <th><b>DELETE</b></th>
+            </tr>
+          </thead>
+        
+          <tbody>
+        
+           
+
+        
+            <% for (pet of adminPet) { %>
+                <tr>
+                 
+                   <td><%= pet.breed %></td>
+            
+                   <td>
+                      <button type="submit" name ="edit" ><a class="edit-link" href ="./admin/update/<%= pet._id %>">EDIT</a></button>
+                      
+                     
+                   </td>
+            
+                   <td>
+                     <form action ="/books/<%= adminPet._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded">
+                        <button type="submit" name ="delete" >DELETE</button>
+                     </form>
+                   </td>
+                  
+                </tr>
+            
+                 <%  } %>
 
 
+        
+        
+        
+          </tbody>
+        </table>
+        </div>
+        
+        </div>
 
+    </div>
 
 
     <%- include('../partials/footer') -%>

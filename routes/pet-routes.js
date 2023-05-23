@@ -4,13 +4,14 @@ const router = express.Router();
 
 router.route('/')
 .get(petsCtrl.all_pet)
+.post(petsCtrl.pet_report_post)
 
 
 router.route('/:_id')
 .get(petsCtrl.pet_detail)
+.put(petsCtrl.pet_update_put)
+.delete(petsCtrl.pet_delete)
 
-router.route('/report')
-.get(petsCtrl.reportPet)
 
 
 module.exports = router;

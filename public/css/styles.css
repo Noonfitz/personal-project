@@ -16,10 +16,12 @@ body{
     --blue: #50808E;
     --blue-green : #69A297;
     --light-green : #A3C9A8;
+    --teal: #006B6B;
+--light-teal: #009E9E;
     --bone:  #DDD8C4;
     --light-orange: #FEBE8C;
     --light-purple:#cfcfd7;
-    --puple:#9691a5;
+    --purple:#9691a5;
     --font-size: 1.4rem;
     --font-family:'Open Sans', sans-serif;
 }
@@ -305,7 +307,92 @@ justify-content: center;
   #radio5:checked ~ .auto-slide .btn5-auto {
     background-color: var(--blue-green);
   }
+ /* admin */
+
+ .background-page {
+    background-color: white;
+  padding:50px 60px;
+ }
+ .admin-content {
+  width:70%;
+  font-family: var(--font-family-other);
+  margin: 0 auto;
+  background-color: var(--white);
+  /* border: solid var(--blue) 4px; */
+  padding:30px;
+  
+  
+}
+
+.admin-content h1 {
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--blue);
+  margin:0;
+}
+
+.admin-content .create-link {
+  text-decoration: none;
  
+
+}
+
+.admin-content input[name= "submitBtn"] {
+  padding: 4px 13px;
+}
+
+.centered-button {
+  display: block;
+   margin: 20px auto 0 auto;
+   background-color: var(--yellow);
+   color: var(--blue);
+   
+}
+
+.admin-comic {
+  border-collapse: collapse;
+  margin: 40px auto 5px;
+}
+.admin-comic th , .admin-comic td {
+  border: solid var(--teal) 2px;
+  padding: 6px
+
+}
+
+.admin-comic th {
+  background-color: var(--blue-green);
+  text-align: center;
+  padding:5px 30px;
+
+}
+
+
+.admin-comic tr {
+  padding: 5px 50px;
+}
+
+
+.admin-comic tr:nth-child(even) {
+  background-color: var(--bone);
+}
+
+.admin-comic button[name="edit"] {
+  background-color: var(--blue-green);
+  padding: 2px 18px;
+}
+
+.admin-comic button[name="delete"] {
+  background-color: var(--blue-green);
+  padding: 2px 18px;
+  color:white;
+}
+
+.admin-comic .edit-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+
 
 /* donate.html */
 
@@ -369,7 +456,7 @@ justify-content: center;
   
   }
   
-  
+
   
         /* personal info*/
   #form-donation{

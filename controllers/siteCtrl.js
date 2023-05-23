@@ -31,6 +31,10 @@ module.exports = {
 
   donate: (request, response) => {
     response.render('pages/donate');
+  },
+
+  register_get: (request,response) => {
+    response.render('pages/register');
   }
 
 

@@ -13,7 +13,7 @@ module.exports = [
       color: 'black&white',
       weight:"not specified",
       hair:"Long",
-      DesCollar:"wearing a pink collar with name tag",
+      collar:"wearing a pink collar with name tag",
       addition:'name tag is Oomi, If you think you have seen this pet, please call or text 339-236-0131 or email: mjbickford@comcast.net',
       image: "1.jpg"
     },
@@ -29,7 +29,7 @@ module.exports = [
         color: 'Brown',
         weight:"not specified",
         hair:"Short",
-        DesCollar:"not specified",
+        collar:"not specified",
         addition:'call Officer Cheung at Brookline Police Dept., 617-730-2730 or email dcheung@brooklinema.gov',
         image: "2.jpg"
       },
@@ -45,7 +45,7 @@ module.exports = [
         color: 'Black',
         weight:"Over 90 Ibs",
         hair:"Short",
-        DesCollar:"He was wearing a blue collar with his name on it. Microchip #985112007831354.",
+        collar:"He was wearing a blue collar with his name on it. Microchip #985112007831354.",
         addition:'If you think you have seen this pet, please call HomeAgain at 888-466-3242',
         image: "3.jpg"
       },
@@ -61,7 +61,7 @@ module.exports = [
         color: 'white with a black patch above one eye and a golden patch above the other eye,Has a golden tail with a little patch of black.',
         weight:"not specified",
         hair:"Long",
-        DesCollar:"Microchipped",
+        collar:"Microchipped",
         addition:'If you think you have seen this pet, please email marita397@yahoo.com',
         image: "4.jpg"
       },
@@ -77,7 +77,7 @@ module.exports = [
         color: 'white with a black patch above one eye and a golden patch above the other eye,Has a golden tail with a little patch of black.',
         weight:"20-30 Ibs",
         hair:"Long",
-        DesCollar:"not specified",
+        collar:"not specified",
         addition:' He also has medical needs and requires daily medication for his eyes so his vision could be deteriorating. He is very shy and will run away so please do not approach',
         image: "5.jpg"
       },
@@ -93,7 +93,7 @@ module.exports = [
         color: 'a blue parakeet',
         weight:"2not specified",
         hair:"not specified",
-        DesCollar:"not specified",
+        collar:"not specified",
         addition:'Frostyk is a blue parakeet  who responds to "Frostyk", "kikiki" and "fir fir fir". Reward offered. If you think you have seen this pet, please  call 781-468-8624 or 917-831-2969 or email aisha.gii@gmail.com',
         image: "6.jpg"
       },
@@ -109,7 +109,7 @@ module.exports = [
         color: 'light brown',
         weight:"Over 50 Ibs",
         hair:"Short",
-        DesCollar:"not specified",
+        collar:"not specified",
         addition:'If you think you have seen this pet, please call 609-577-6791 or email Patrick.Johnson@nationalgrid.com',
         image: "7.jpg"
       },
@@ -126,7 +126,7 @@ module.exports = [
         color: 'grey and apricot',
         weight:"10-20 Ibs",
         hair:"Long",
-        DesCollar:"not specified",
+        collar:"not specified",
         addition:'Shy and scared.Reward for safe return. If you think you have seen this pet, please call 978-394-2326 or email coowri@yahoo.com',
         image: "8.jpg"
       },
@@ -142,7 +142,7 @@ module.exports = [
         color: 'black & brown',
         weight:"30-40 Ibs",
         hair:"Long",
-        DesCollar:" Wearing a brown flea/tick collar. Microchip #0A137A295D.",
+        collar:" Wearing a brown flea/tick collar. Microchip #0A137A295D.",
         addition:'If you think you have seen this pet, please  call 781-930-9286 or email aldosferra9@gmail.com',
         image: "9.jpg"
       },
@@ -159,7 +159,7 @@ module.exports = [
         color: 'black',
         weight:"30-40 Ibs",
         hair:"Short",
-        DesCollar:"not specified",
+        collar:"not specified",
         addition:'If you think you have seen this pet, please call 508-209-4166 or  email mypeanutjoshnick@yahoo.com',
         image: "10.jpg"
       },
@@ -176,7 +176,7 @@ module.exports = [
         color: 'white',
         weight:"30-40 Ibs",
         hair:"Long",
-        DesCollar:"She has a herniated belly button and a pink nose. Spayed and microchipped.",
+        collar:"She has a herniated belly button and a pink nose. Spayed and microchipped.",
         addition:'If you think you have seen this pet, please call the Lincoln Police at 401-333-1111 or email dave.vermette@gmail.com',
         image: "11.jpg"
       },
@@ -192,16 +192,9 @@ module.exports = [
         color: ' black with brown and golden coloring and has yellow eyes',
         weight:"20-30 Ibs",
         hair:"Short",
-        DesCollar:"He has two very thin golden streaks down his back. He was wearing a pink collar with a bell as well as a tick and flea collar. No microchip.",
+        collar:"He has two very thin golden streaks down his back. He was wearing a pink collar with a bell as well as a tick and flea collar. No microchip.",
         addition:'If you think you have seen this pet, please call 508-543-0555 or 508-404-7095 or email HNASRI@partners.org',
         image: "12.jpg"
       },
 
-
-
-
-
-
-
-    
 ]

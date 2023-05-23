@@ -13,33 +13,34 @@
         <div class="col-12"> 
               <label for="what-happen" class="form-label">What Happened?</label>
               <select id ="what-happen" class="form-select" >
-                  <option value="blank" disabled selected>Select</option>
-                  <option value="1">Lost</option>
-                  <option value="2">Found</option>             
+                  <option value="<%= foundPet.type %>" selected><%= foundPet.type %></option>
+                  <option value="Lost">Lost</option>
+                  <option value="Found">Found</option>             
                 </select>
         </div>
   
   
         <div class="col-12">
           <label for="start" class="form-label">Date on which the pet was lost or found</label>
-          <input class="form-control" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+          <input class="form-control" type="text" id="start" name="trip-start" value="<%= foundPet.date %>">
           </div>
   
         <div class="col-12">
           <label for="what-breed" class="form-label">Breed/Description?</label>
-          <input type="text" class="form-control" id="breed" >
+          <input type="text" class="form-control" id="breed" value="<%= foundPet.breed %>" >
        </div>
   
         <div class="col-12">
           <label for="inputAddress" class="form-label">Address</label>
-          <input type="text" class="form-control" id="inputAddress" >
+          <input type="text" class="form-control" id="inputAddress"  value="<%= foundPet.address %>">
         </div>
   
   
       
         <div class="col-12">
           <label for="upload-pic" class="form-label">UpLoad a Photo of Your Pet</label>
-          <input type="file" class="form-control" id="upload-pic" ><br>
+          <input type="file" class="form-control" id="upload-pic" value="<%= foundPet.ima
+           %>"><br>
           <button class="btn btn-secondary" type="button" id="upload-pic">Upload Photo</button>
         </div>
   
@@ -48,20 +49,21 @@
        <div class="col-12"> 
           <label for="what-gender" class="form-label">What gender is the pet?</label>
           <select id ="what-gender" class="form-select" >
-              <option selected>Male</option>
-              <option value="1">Female</option>
-              <option value="2">Sex Uncertain</option>
+              <option value="<%= foundPet.gender %>" selected><%= foundPet.gender %></option>
+              <option value="Male" >Male</option>
+              <option value="Female">Female</option>
+              <option value="uncertain">Sex Uncertain</option>
           </select>
         </div>
   
         <div class="col-12">
           <label for="what-age" class="form-label">Approximate age of the pet in years(number only)</label>
-          <input type="number" class="form-control" id="what-age" >
+          <input type="text" class="form-control" id="what-age" value="<%= foundPet.age %>">
        </div>
   
        <div class="col-12">
           <label for="what-color" class="form-label">What colors are the pet?</label>
-          <input type="text" class="form-control" id="what-color" >
+          <input type="text" class="form-control" id="what-color" value="<%= foundPet.color %>">
        </div>
   
     
@@ -69,12 +71,13 @@
         <div class="col-12"> 
           <label for="what-weight" class="form-label">What is the approximate weight of the pet?</label>
           <select id ="what-weight" class="form-select" >
-              <option selected>Under 5 lbs</option>
-              <option value="1">5-10 Ibs</option>
-              <option value="2">10-20 Ibs</option>
-              <option value="3">20-30 Ibs</option>
-              <option value="4">30-40 Ibs</option>
-              <option value="5">Over 50 Ibs</option>
+            <option value="<%= foundPet.weight %>" selected><%= foundPet.weight %></option>
+              <option value="under 5 lbs">Under 5 lbs</option>
+              <option value="5-10 lbs">5-10 Ibs</option>
+              <option value="10-20 lbs">10-20 Ibs</option>
+              <option value="20-30 lbs">20-30 Ibs</option>
+              <option value="30-40 ibs">30-40 Ibs</option>
+              <option value="over 50 lbs">Over 50 Ibs</option>
           </select>
         </div>
   
@@ -82,22 +85,23 @@
         <div class="col-12"> 
           <label for="length-hair" class="form-label">What length of hair does the pet have?</label>
           <select id ="length-hair" class="form-select" >
-              <option selected>Short</option>
-              <option value="1">Medium</option>
-              <option value="2">Long</option>
-              <option value="3">Not Applicable</option>
+            <option value="<%= foundPet.hair %>" selected><%= foundPet.hair %></option>
+              <option value="Short">Short</option>
+              <option value="Medium">Medium</option>
+              <option value="Long">Long</option>
+              <option value="Not Applicable">Not Applicable</option>
           </select>
         </div>
   
   
         <div class="col-12">
           <label for="pet's-collar" class="form-label">Describe the pet's collar</label>
-          <input type="text" class="form-control" id="pet's-collar" >
+          <input type="text" class="form-control" id="pet's-collar" value="<%= foundPet.collar %>" >
        </div>
   
        <div class="col-12">
           <label for="details" class="form-label">Provide additional comments or details</label>
-          <textarea class="form-control" id="details" rows="3"></textarea>
+          <textarea class="form-control" id="details" rows="3" ><%= foundPet.addition %></textarea>
        </div>
   
   
