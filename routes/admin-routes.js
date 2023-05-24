@@ -5,7 +5,7 @@ const router = express.Router();
 router.route('/')
 .get(adminCtrl.admin)
 
-router.route('/report')
+router.route('/report-pet')
 .get(adminCtrl.admin_report)
 
 router.route('/update/:_id')

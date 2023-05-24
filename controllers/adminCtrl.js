@@ -1,30 +1,40 @@
 const { request, response } = require('express');
 const data = require('../data/data');
+const Pet = require('../models/petModel');
 
 
 module.exports = {
     admin: (request, response) => {
-        response.render('pages/admin', {
-         adminPet : data
-        });
+        Pet.find({},(error, allPets) => {
+            if(error){
+                return error;
+            } else {
+                response.render('pages/admin', {
+                adminPet : allPets
+              });
+             }
+           });
     },
 
-    admin_report : (request,response) => {
+    admin_report: (request,response) => {
         response.render('pages/report', {
-            adminPet:data
         })
     },
 
     admin_update: (request,response) => {
-        const {_id} = request.params;
-        const foundPet = data.find(pet => pet._id === String(_id));
-        response.render('pages/update', {  
-         adminPet : data,
-        foundPet : foundPet
-        })
+        const { _id } = request.params;
+        Pet.findOne({_id:_id}, (error , foundPet) => {
+            if(error) {
+                return error;
+            } else {
+                response.render('pages/update', {  
+                    foundPet : foundPet
+            });
+          }
+       }); 
+
     },
 
-    
 
 
 }

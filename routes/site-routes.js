@@ -27,17 +27,17 @@ router.route('/donate')  //still don't know which route to put in yet
 
  router.route('/register')
  .get(siteCtrl.register_get)
-//  .post(siteCtrl.register_post)
+.post(siteCtrl.register_post)
 
  router.route('/login')
- .get(siteCtrl.login);
-//  .post(siteCtrl.login_post)
+ .get(siteCtrl.login_get)
+.post(siteCtrl.login_post)
 
-// router.route('/auth/google')
-//   .get(siteCtrl.google_get)
+router.route('/auth/google')
+ .get(siteCtrl.google_get)
 
-// router.route('/auth/google/admin')
-//   .get(siteCtrl.google_redirect_get)
+router.route('/auth/google/admin')
+.get(siteCtrl.google_redirect_get)
 
 
 module.exports = router;

@@ -6,7 +6,7 @@
 
 
     
-    <form class="report-pet container">
+    <form class="report-pet container" action ="/search/<%= foundPet._id %>?_method=PUT" method="POST" enctype="application/x-www-form-urlencoded" >
       <h1>Update A Lost Or Found Pet Report and Flyer</h1>
       <div class="row g-3">
   
@@ -21,12 +21,12 @@
   
   
         <div class="col-12">
-          <label for="start" class="form-label">Date on which the pet was lost or found</label>
-          <input class="form-control" type="text" id="start" name="trip-start" value="<%= foundPet.date %>">
+          <label for="last-saw" class="form-label">Date on which the pet was lost or found</label>
+          <input class="form-control" type="text" id="last-saw" name="last-saw" value="<%= foundPet.date %>">
           </div>
   
         <div class="col-12">
-          <label for="what-breed" class="form-label">Breed/Description?</label>
+          <label for="breed" class="form-label">Breed/Description?</label>
           <input type="text" class="form-control" id="breed" value="<%= foundPet.breed %>" >
        </div>
   
@@ -106,7 +106,7 @@
   
   
        <div class="col-12 text-center">
-          <button class="pattern-button" type="submit" id="upload-pic">Submit</button>
+          <input type="submit" class="pattern-button" id="upload-pic"  value="Submit" />
        </div>
   
   </div>

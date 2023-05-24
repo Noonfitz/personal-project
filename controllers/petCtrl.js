@@ -1,5 +1,5 @@
-const { request, response } = require('express');
-const data = require('../data/data');
+// const { request, response } = require('express');
+// const data = require('../data/data');
 const Pet = require('../models/petModel');
 
 module.exports = {
@@ -17,13 +17,6 @@ module.exports = {
   },
 
   pet_detail: (request, response) => {
-    // const {_id} = request.params;
-    // const foundPet = data.find(pet => pet._id === _id);
-    // response.render('pages/pet-details', {
-    //     petsArray: data,
-    //     foundPet : foundPet
-    // });
-
     const {_id} = request.params;
     Pet.findOne({_id: _id}, (error, foundPet) => {
       if(error) {
@@ -59,7 +52,7 @@ pet_report_post: (request,response) => {
     if (breed != "") {
         response.redirect("/admin")
       } else {
-        response.redirect('/admin/report')
+        response.redirect('/admin/report-pet')
       }
 },
 
@@ -89,6 +82,8 @@ pet_update_put: (request, response) => {
       }
     })
   },
+
+  
   pet_delete: (request, response) => {
     const { _id } = request.params;
     Pet.deleteOne({_id: _id}, error => {

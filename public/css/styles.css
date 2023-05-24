@@ -895,6 +895,26 @@ border-radius:0;
   font-weight: bold;
 }
 
+.regis-google {
+  background-color: var(--yellow);
+display: block;
+margin: 20px auto 0;
+padding:5px 13px;
+font-size: 1.2em;
+font-weight: bold;
+font-family: var(--font-family-other);
+}
+
+
+.regis-google a:visited{
+  color: var(--blue);
+}
+
+.regis-google a:active{
+  color: var(--blue);
+}
+
+
 
 
 
