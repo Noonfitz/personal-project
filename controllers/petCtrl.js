@@ -31,7 +31,7 @@ module.exports = {
 },
 
 pet_report_post: (request,response) => {
-    const {type, date, breed, address, gender, age, color, weight, hair ,collar, addition, image} = request.body;
+    const {type, date, breed, address, gender, age, color, weight, hair ,collar, addition, image} =request.body;
     const newPet = new Pet ({
     type: type,
     date: date, 

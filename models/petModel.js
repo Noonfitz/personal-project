@@ -4,13 +4,9 @@ const {Schema} = mongoose;
 const petSchema = new Schema({
   type: {
     type: String,
-    // required: [true, 'A type is required.'],
-    // minlength:[1,'Minimun length for the first name is 1 characters.']
   },
   date: {
-    type: String,
-    // required: [true, 'The date is required.'],
-    // minlength:[8,'Minimun length for date 00/00/00 is 8 characters.']
+    type: Date,
   },
   breed: {
     type: String,
@@ -19,8 +15,7 @@ const petSchema = new Schema({
   },
   address: {
     type: String,
-    // required: [true, 'The address is required.'],
-    // minlength: [1, 'Minimun length for address is 1']
+  
   },
   gender: {
     type: String,
