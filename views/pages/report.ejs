@@ -11,7 +11,7 @@
 
       <div class="col-12"> 
             <label for="what-happen" class="form-label">What Happened?</label>
-            <select id ="what-happen" class="form-select" >
+            <select id ="what-happen" name="type" class="form-select" >
                 <option value="blank" disabled selected>Select</option>
                 <option value="Lost">Lost</option>
                 <option value="Found">Found</option>             
@@ -21,7 +21,7 @@
 
       <div class="col-12">
         <label for="last-saw" class="form-label">Date on which the pet was lost or found</label>
-        <input class="form-control" type="date" id="last-saw" name="last-saw"  min="2018-01-01"  placeholder="MM/DD/YYYY">
+        <input class="form-control" type="text" id="last-saw" name="date" min="2018-01-01" placeholder="mm/dd/yyyy">
         </div>
 
       <div class="col-12">
@@ -31,14 +31,14 @@
 
       <div class="col-12">
         <label for="inputAddress" class="form-label">Address, the last time you were seeing</label>
-        <input type="text" class="form-control" name="inputAddress" id="inputAddress" >
+        <input type="text" class="form-control" name="address" id="inputAddress" >
       </div>
 
 
     
       <div class="col-12">
         <label for="upload-pic" class="form-label">UpLoad a Photo of Your Pet</label>
-        <input type="file" class="form-control"name='upload-pic' id="upload-pic" ><br>
+        <input type="file" class="form-control"name='image' id="upload-pic" ><br>
         <button class="btn btn-secondary" type="button" id="upload-pic">Upload Photo</button>
       </div>
 
@@ -46,7 +46,7 @@
 
      <div class="col-12"> 
         <label for="what-gender" class="form-label">What gender is the pet?</label>
-        <select id ="what-gender" name="what-gender" class="form-select" >
+        <select id ="gender" name="what-gender" class="form-select" >
           <option value="blank" disabled selected>Select</option>
           <option value="Male" >Male</option>
           <option value="Female">Female</option>
@@ -56,19 +56,19 @@
 
       <div class="col-12">
         <label for="what-age" class="form-label">Approximate age of the pet in years(number only)</label>
-        <input type="text" class="form-control" name="what-age" id="what-age" >
+        <input type="text" class="form-control" name="age" id="what-age" >
      </div>
 
      <div class="col-12">
         <label for="what-color" class="form-label">What colors are the pet?</label>
-        <input type="text" class="form-control" name="what-color" id="what-color">
+        <input type="text" class="form-control" name="color" id="what-color">
      </div>
 
   
 
       <div class="col-12"> 
         <label for="what-weight" class="form-label">What is the approximate weight of the pet?</label>
-        <select id ="what-weight" name="what-weight" class="form-select" >
+        <select id ="what-weight" name="weight" class="form-select" >
           <option value="blank" disabled selected>Select</option>
           <option value="under 5 lbs">Under 5 lbs</option>
           <option value="5-10 lbs">5-10 Ibs</option>
@@ -82,7 +82,7 @@
 
       <div class="col-12"> 
         <label for="length-hair" class="form-label">What length of hair does the pet have?</label>
-        <select id ="length-hair" name="length-hair" class="form-select" >
+        <select id ="length-hair" name="hair" class="form-select" >
           <option value="blank" disabled selected>Select</option>
           <option value="Short">Short</option>
           <option value="Medium">Medium</option>
@@ -94,12 +94,12 @@
 
       <div class="col-12">
         <label for="pet's-collar" class="form-label">Describe the pet's collar</label>
-        <input type="text" class="form-control" name="pet's-collar" id="pet's-collar" >
+        <input type="text" class="form-control" name="collar" id="pet's-collar" >
      </div>
 
      <div class="col-12">
         <label for="details" class="form-label">Provide additional comments or details</label>
-        <textarea class="form-control" name= "details" id="details" rows="3"></textarea>
+        <textarea class="form-control" name= "addition" id="details" rows="3"></textarea>
      </div>
 
 

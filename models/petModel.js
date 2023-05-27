@@ -6,7 +6,8 @@ const petSchema = new Schema({
     type: String,
   },
   date: {
-    type: Date,
+    type: String,
+   
   },
   breed: {
     type: String,
@@ -43,8 +44,12 @@ const petSchema = new Schema({
 
    image: {
     type: String,
-  }
+  },
+
+
 });
+
+
 
 const Pet = mongoose.model('Pet', petSchema);
 

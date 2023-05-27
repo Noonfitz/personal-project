@@ -12,7 +12,7 @@
   
         <div class="col-12"> 
               <label for="what-happen" class="form-label">What Happened?</label>
-              <select id ="what-happen" name ="what-happen" class="form-select" >
+              <select id ="what-happen" name ="type" class="form-select" >
                   <option value="<%= foundPet.type %>" selected><%= foundPet.type %></option>
                   <option value="Lost">Lost</option>
                   <option value="Found">Found</option>             
@@ -22,7 +22,7 @@
   
         <div class="col-12">
           <label for="last-saw" class="form-label">Date on which the pet was lost or found</label>
-          <input class="form-control" type="date" id="last-saw" name="last-saw" value="<%= foundPet.date %>">
+          <input class="form-control" type="text" id="last-saw" name="date" value="<%= foundPet.date %>">
           </div>
   
         <div class="col-12">
@@ -32,14 +32,14 @@
   
         <div class="col-12">
           <label for="inputAddress" class="form-label">Address</label>
-          <input type="text" class="form-control" name ="inputAddress" id="inputAddress"  value="<%= foundPet.address %>">
+          <input type="text" class="form-control" name ="address" id="inputAddress"  value="<%= foundPet.address %>">
         </div>
   
   
       
         <div class="col-12">
           <label for="upload-pic" class="form-label">UpLoad a Photo of Your Pet</label>
-          <input type="file" class="form-control" name="upload-pic" id="upload-pic" value="<%= foundPet.image %>"><br>
+          <input type="file" class="form-control" name="image" id="upload-pic" value="<%= foundPet.image %>"><br>
           <button class="btn btn-secondary" type="button" id="upload-pic">Upload Photo</button>
         </div>
   
@@ -47,7 +47,7 @@
   
        <div class="col-12"> 
           <label for="what-gender" class="form-label">What gender is the pet?</label>
-          <select id ="what-gender"name ="what-gender" class="form-select" >
+          <select id ="what-gender" name ="gender" class="form-select" >
               <option value="<%= foundPet.gender %>" selected><%= foundPet.gender %></option>
               <option value="Male" >Male</option>
               <option value="Female">Female</option>
@@ -57,19 +57,19 @@
   
         <div class="col-12">
           <label for="what-age" class="form-label">Approximate age of the pet in years(number only)</label>
-          <input type="text" class="form-control" name="what-age" id="what-age" value="<%= foundPet.age %>">
+          <input type="text" class="form-control" name="age" id="what-age" value="<%= foundPet.age %>">
        </div>
   
        <div class="col-12">
           <label for="what-color" class="form-label">What colors are the pet?</label>
-          <input type="text" class="form-control" name="what-color" id="what-color" value="<%= foundPet.color %>">
+          <input type="text" class="form-control" name="color" id="what-color" value="<%= foundPet.color %>">
        </div>
   
     
   
         <div class="col-12"> 
           <label for="what-weight" class="form-label">What is the approximate weight of the pet?</label>
-          <select id ="what-weight" name="what-weight" class="form-select" >
+          <select id ="what-weight" name="weight" class="form-select" >
             <option value="<%= foundPet.weight %>" selected><%= foundPet.weight %></option>
               <option value="under 5 lbs">Under 5 lbs</option>
               <option value="5-10 lbs">5-10 Ibs</option>
@@ -83,7 +83,7 @@
   
         <div class="col-12"> 
           <label for="length-hair" class="form-label">What length of hair does the pet have?</label>
-          <select id ="length-hair" name="length-hair" class="form-select" >
+          <select id ="length-hair" name="hair" class="form-select" >
             <option value="<%= foundPet.hair %>" selected><%= foundPet.hair %></option>
               <option value="Short">Short</option>
               <option value="Medium">Medium</option>
@@ -95,12 +95,12 @@
   
         <div class="col-12">
           <label for="pet's-collar" class="form-label">Describe the pet's collar</label>
-          <input type="text" class="form-control" name="pet's-collar" id="pet's-collar" value="<%= foundPet.collar %>" >
+          <input type="text" class="form-control" name="collar" id="pet's-collar" value="<%= foundPet.collar %>" >
        </div>
   
        <div class="col-12">
           <label for="details" class="form-label">Provide additional comments or details</label>
-          <textarea class="form-control" name="details" id="details" rows="3" ><%= foundPet.addition %></textarea>
+          <textarea class="form-control" name="addition" id="details" rows="3" ><%= foundPet.addition %></textarea>
        </div>
   
   

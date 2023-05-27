@@ -10,7 +10,7 @@ menuBtn.addEventListener("click",function(){
 });
 
 
-//for index.html (picture move with ratio button)
+//for index(picture move with ratio button)
 let radioCountForward = 1;
 setInterval(function(){
     document.getElementById("radio" + radioCountForward).checked = true;
@@ -19,14 +19,24 @@ setInterval(function(){
         radioCountForward = 1;
     }
   
-},5000);
+},3000);
+
+
+// function dateFormat() {
+//   const date = document.getElementById('last-saw').value;
+//   const dateFormat = date.toISOString().slice(0,10);
+
+// }
 
 
 
+// const d1 = new Date("2021-07-14")
+//  var dateFormat =d1.format("yyyy/mm/dd");
+// document.getElementById("last-saw").innerHTML = dateFormat;
 
 
 
-//for contact.html
+//for contact.ejs
 function validate(){
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
