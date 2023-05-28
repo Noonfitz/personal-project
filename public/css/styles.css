@@ -827,14 +827,24 @@ margin-top:30px;
   border-bottom-right-radius: 26px;
   border-top-right-radius: 26px;  
   font-family: var(--font-family-other);
-  font-size: 0.95em;  
+  font-size: 1.2em;  
  
 }
 
 .bottom-section span {
   color: var(--blue);
   font-weight: bold;
-  text-decoration: underline;
+
+}
+
+.center-btn{
+  margin-bottom: 40px;
+
+}
+
+.go-back-btn{
+  text-decoration: none;
+  color: white;
 }
 
 /* login */
@@ -888,6 +898,7 @@ border-radius:0;
   padding:8px 15px;
   border-radius: 4px;
  text-decoration: none;
+ margin-top:20px;
 }
 
 .pattern-button:hover {
