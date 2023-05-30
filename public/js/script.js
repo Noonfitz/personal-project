@@ -68,8 +68,8 @@ function validate(){
       error.innerHTML = text;
       return false;
     }
-    if(message.length <= 25){
-      text = "Please Enter More Than 25 Characters";
+    if(message.length <= 10){
+      text = "Please Enter More Than 10 Characters";
       error.innerHTML = text;
       return false;
     }

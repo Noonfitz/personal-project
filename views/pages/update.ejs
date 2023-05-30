@@ -22,7 +22,7 @@
   
         <div class="col-12">
           <label for="last-saw" class="form-label">Date on which the pet was lost or found</label>
-          <input class="form-control" type="text" id="last-saw" name="date" value="<%= foundPet.date %>">
+          <input class="form-control" type="datetime-local" id="last-saw" name="date" min="2000-01-02" value="<%= foundPet.date %>">
           </div>
   
         <div class="col-12">
