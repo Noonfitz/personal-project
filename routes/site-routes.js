@@ -6,23 +6,27 @@ router.route('/')
   .get(siteCtrl.index);
 
 router.route('/contact')
-  .get(siteCtrl.contact);
+  .get(siteCtrl.contact_get)
+  .post(siteCtrl.contact_post)
+  
 
 router.route('/cat-action')
-  .get(siteCtrl.catAction);
+  .get(siteCtrl.catAction)
 
 router.route('/dog-action')
-  .get(siteCtrl.dogAction);
+  .get(siteCtrl.dogAction)
 
 router.route('/other-lost-pet')
-  .get(siteCtrl.otherLostPet);
+  .get(siteCtrl.otherLostPet)
 
 router.route('/found-pet')
-  .get(siteCtrl.foundPet);
+  .get(siteCtrl.foundPet)
 
 
-router.route('/donate')  //still don't know which route to put in yet 
- .get(siteCtrl.donate);
+router.route('/donate')  
+ .get(siteCtrl.donate_get)
+ .post(siteCtrl.donate_post)
+
 
 
  router.route('/register')

@@ -1,3 +1,4 @@
+const Pet = require("../../models/petModel");
 
 //hamburger button
 const menuBtn=document.querySelector('.fa');
@@ -21,22 +22,11 @@ setInterval(function(){
   
 },3000);
 
-
-// function dateFormat() {
-//   const date = document.getElementById('last-saw').value;
-//   const dateFormat = date.toISOString().slice(0,10);
-
-// }
-
-
-
-// const d1 = new Date("2021-07-14")
-//  var dateFormat =d1.format("yyyy/mm/dd");
-// document.getElementById("last-saw").innerHTML = dateFormat;
-
-
-
+// const chanegColor = document.getElementsByClassName('changed-color').value;
+// use for each 
+// convert to array first if i use different loop 
 //for contact.ejs
+
 function validate(){
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -48,12 +38,12 @@ function validate(){
     error.style.padding = "6px";
     
     var text;
-    if(name.length < 5){
+    if(name.length < 4){
       text = "Please Enter valid Name";
       error.innerHTML = text;
       return false;
     }
-    if(subject.length < 7){
+    if(subject.length < 4){
       text = "Please Enter Correct Subject";
       error.innerHTML = text;
       return false;
@@ -74,6 +64,15 @@ function validate(){
       return false;
     }
     alert("Thank you for contacting us, we will get in touch with you soon");
+    return true;
+  }
+
+
+  // for donating
+
+  function validateDonate(){
+  
+    alert("Thank you for your donation. Your generosity means everything to us and to the community we serve.”");
     return true;
   }
 

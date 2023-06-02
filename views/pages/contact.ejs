@@ -10,18 +10,18 @@
      <p>Have any questions? Drop us a message</p>
      <div id="error"></div>
 
-     <form action="#" onsubmit="return validate()" > 
+     <form action="/contact" method="POST" onsubmit="return validate()" > 
 
       <div class="row">
         <div class="column">
          <label for="name">Name</label>
-         <input type="text" id="name" placeholder="Your name here">
+         <input type="text" name="name" id="name" placeholder="Your name here" required>
       
         </div>
 
         <div class="column">
          <label for="email">E-mail</label>
-         <input type="text" id="email" placeholder="Your e-mail here">
+         <input type="text" name="email" id="email" placeholder="Your e-mail here">
          
         </div>
 
@@ -31,13 +31,13 @@
 
         <div class="column">
          <label for="subject">Subject</label>
-         <input type="text" id="subject" placeholder="Your subject here">
+         <input type="text" name="subject" id="subject" placeholder="Your subject here">
         
         </div>
 
         <div class="column">
          <label for="phone">Contact Number</label>
-         <input type="text" id="phone" placeholder="Your phone number here">
+         <input type="text" name="phone" id="phone" placeholder="Your phone number here">
          
         </div>
 
@@ -46,7 +46,7 @@
       <div class="row">
         <div class="column">
          <label for="message">Message Us</label>
-         <textarea id="message"  rows= "4" placeholder="Describe your issue in detail here"></textarea>
+         <textarea id="message" name="message" rows= "4" placeholder="Describe your issue in detail here" required></textarea>
         
          </div>
       </div>

@@ -6,7 +6,7 @@ const petSchema = new Schema({
     type: String,
   },
   date: {
-    type: Date,
+    type: String,
    
   },
   breed: {
