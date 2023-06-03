@@ -1,5 +1,5 @@
-const { forEach } = require("../../data/data");
-const Pet = require("../../models/petModel");
+// const { forEach } = require("../../data/data");
+// const Pet = require("../../models/petModel");
 
 //hamburger button
 const menuBtn=document.querySelector('.fa');

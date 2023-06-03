@@ -5,7 +5,7 @@
 
 
     <div class="lost-pet">
-      <h1>Search Our Database Of Lost And Found Pet Report</h1>
+      <h1>The Database Of Lost And Found Pet Report</h1>
       
       <div class="pet-details">
  
@@ -13,7 +13,7 @@
    
     <div class="pet-individual"> 
       <a href="/search/<%=pet._id %>"><img src="/images/<%= pet.image %>" alt="<%= pet.breed %>"></a>
-      <p class="search-type"><div class="<%= pet.type === 'Found' ? 'change-yellow': 'change-red'%>"><%= pet.type %></div><br><%= pet.breed %><br><a href="/search/<%=pet._id %>"class="detail-link">Details</a></p>
+      <p class="search-type"><div class="found-lost <%= pet.type === 'Found' ? 'change-yellow': 'change-red'%>"><%= pet.type %></div><%= pet.breed %><br><a href="/search/<%=pet._id %>"class="detail-link">Details</a></p>
     </div>
 
    <% } %>

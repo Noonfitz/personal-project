@@ -83,7 +83,7 @@ body{
 }
 
 .change-yellow {
-  color: green;
+  color:  #FEB139;
   font-weight: bold;
 }
 
@@ -111,10 +111,10 @@ position: relative;
 
 
 .text-header h1{
-  margin:10px;
- 
-  font-weight: bold;
-  color: var(--blue);
+  margin:60px 10px 20px 10px;
+  font-size: 2em;
+   font-weight: bold;
+   color: var(--blue);
 
 }
 
@@ -230,6 +230,7 @@ color: var(--white);
 }
 .box p {
   margin: 0 auto;
+  width: 70%;
 }
 
     /* manual */
@@ -777,11 +778,25 @@ border-radius: 4px;
   font-family: var(--font-family);
 }
 
+.pet-individual {
+  text-align: center;
+}
+
 .pet-individual .detail-link {
   text-decoration: none;
   color: var(--blue);
 }
 
+.pet-individual img{
+   border-radius:20px;
+   border: 1px solid var(--teal);
+}
+
+
+.pet-individual .found-lost {
+  text-align: center;
+  font-size: 1.2em;
+}
 .pet-individual .detail-link:visited {
   color: var(--blue);
 }
@@ -1041,6 +1056,7 @@ font-family: var(--font-family-other);
 #first-impress-pics {
   margin-top:50px;
   height: 100%;
+  display: none;
   
 }
 

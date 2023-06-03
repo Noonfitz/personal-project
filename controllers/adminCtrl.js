@@ -1,5 +1,5 @@
-const { request, response } = require('express');
-const data = require('../data/data');
+// const { request, response } = require('express');
+// const data = require('../data/data');
 const Pet = require('../models/petModel');
 
 
