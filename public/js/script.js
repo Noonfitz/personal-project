@@ -1,3 +1,4 @@
+const { forEach } = require("../../data/data");
 const Pet = require("../../models/petModel");
 
 //hamburger button
@@ -22,9 +23,21 @@ setInterval(function(){
   
 },3000);
 
-// const chanegColor = document.getElementsByClassName('changed-color').value;
+
+// if(pet.type === "found"){
+//   return 'change-yellow';
+// } else  {
+//   return 'change-red';
+// }
+
+// pet.type === 'found' ? 'change-yellow': 'change-red'
+// const changeColor = document.getElementsByClassName('changed-color').value;
 // use for each 
 // convert to array first if i use different loop 
+
+
+
+
 //for contact.ejs
 
 function validate(){

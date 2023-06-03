@@ -82,6 +82,16 @@ body{
 
 }
 
+.change-yellow {
+  color: green;
+  font-weight: bold;
+}
+
+.change-red {
+  color:red;
+  font-weight: bold;
+}
+
 /* index.html */
 
 
