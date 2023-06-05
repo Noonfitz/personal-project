@@ -403,6 +403,21 @@ justify-content: center;
   text-decoration: none;
 }
 
+.report-section{
+  margin-top: 30px;
+  padding:5px 9px 5px 9px;
+  box-shadow:10px 5px 5px #006B6B;
+}
+
+.report-section a {
+font-weight: bold;
+font-size: 1.2em;
+}
+
+.report-section a:hover {
+  font-weight: bold;
+ color: #FEB139;
+  }
 
 
 /* donate.html */
@@ -1116,6 +1131,10 @@ font-family: var(--font-family-other);
  
  .donor-section input[type="text"], .donor-section input[type="email"]{
   width:80%;
+}
+
+.contact-box {
+  position: relative;
 }
 
 
