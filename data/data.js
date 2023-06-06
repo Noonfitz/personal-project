@@ -1,4 +1,5 @@
 const { v4:uuid } = require('uuid');
+const { db } = require('../models/petModel');
 
 
 module.exports = [
@@ -188,13 +189,61 @@ module.exports = [
         breed: "American Cat",
         address: "North Grove St. Foxboro, MA.",
         gender: 'Male',
-        age: ' ot specified',
+        age: ' not specified',
         color: ' black with brown and golden coloring and has yellow eyes',
         weight:"20-30 Ibs",
         hair:"Short",
         collar:"He has two very thin golden streaks down his back. He was wearing a pink collar with a bell as well as a tick and flea collar. No microchip.",
         addition:'If you think you have seen this pet, please call 508-543-0555 or 508-404-7095 or email HNASRI@partners.org',
         image: "12.jpg"
+      },
+
+      {  
+
+        type: "Found",
+        date: "5/24/23",
+        breed: "Tzu/Papillon mixed breed",
+        address: "Beechwood Ave./Crystal Lake Rd., Sudbury, MA.",
+        gender: 'Male',
+        age: ' an 8-month-old',
+        color: 'black, white and brown',
+        weight:"20-30 Ibs",
+        hair:"Long",
+        collar:" He was wearing a blue collar.",
+        addition:'If you think you have seen this pet, please call 978-895-8123',
+        image: "13.jpg"
+      },
+      
+      {  
+      
+        type: "Found",
+        date: "5/22/23",
+        breed: "Brown Rabbit",
+        address: "20 Easthampton Rd., Holyoke, MA.",
+        gender: 'Male',
+        age: 'not specified',
+        color: 'light brown',
+        weight:"20-30 Ibs",
+        hair:"Long",
+        collar:"not specified ",
+        addition:'If you think you have seen this pet, please email lclarke3711@gmail.com',
+        image: "14.jpg"
+      },
+      
+      {  
+      
+        type: "Found",
+        date: "5/22/23",
+        breed: "Small Brown Dog",
+        address: "Kent St. & Aspinwall Ave., Brookline, MA.",
+        gender: 'Male',
+        age: 'not specified',
+        color: 'brown',
+        weight:"20-30 Ibs",
+        hair:"Long",
+        collar:"not specified ",
+        addition:'If you think you have seen this pet, please  call Brookline Animal Control at 617-730-2730 or email dcheung@brooklinema.gov',
+        image: "15.jpg"
       },
 
 ]
