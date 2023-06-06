@@ -90,3 +90,12 @@ function validate(){
   }
 
 
+  // api map 
+
+  function initMap(){
+    let location = document.getElementById('inputAddress');
+    let AutoComplete = new google.maps.places.Autocomplete(location)
+
+  }
+
+

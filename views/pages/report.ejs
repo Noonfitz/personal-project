@@ -31,7 +31,7 @@
 
       <div class="col-12">
         <label for="inputAddress" class="form-label">Address, the last time you were seeing</label>
-        <input type="text" class="form-control" name="address" id="inputAddress" >
+        <input type="text" class="form-control" name="address" id="inputAddress" placeholder="Street, City, State, ZipCode">
       </div>
 
 
@@ -111,7 +111,8 @@
 </div>
      
 </form>
+<!-- api map -->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZZeAULdJ0uNBx0CMSMCP0vUqw1hr8jqY&libraries=places&callback=initMap" defer></script>
 
-
-
+ 
 <%- include('../partials/footer') -%>
