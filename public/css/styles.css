@@ -360,7 +360,7 @@ justify-content: center;
    
 }
 
-.admin-comic {
+.table {
   border-collapse: collapse;
   margin: 40px auto 5px;
 }
@@ -387,18 +387,18 @@ justify-content: center;
   background-color: var(--bone);
 }
 
-.admin-comic button[name="edit"] {
+.table button[name="edit"] {
   background-color: var(--blue-green);
   padding: 2px 18px;
 }
 
-.admin-comic button[name="delete"] {
+.table button[name="delete"] {
   background-color: var(--blue-green);
   padding: 2px 18px;
   color:white;
 }
 
-.admin-comic .edit-link {
+.table .edit-link {
   color: var(--white);
   text-decoration: none;
 }
