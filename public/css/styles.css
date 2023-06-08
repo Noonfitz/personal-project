@@ -753,7 +753,11 @@ border-radius: 4px;
 }
 
 /* search */
-
+#map {
+  margin-top:50px;
+  height:700px;
+  width: 100%;
+}
 .pet-details {
   padding-top:30px;
   display: flex;
