@@ -90,7 +90,7 @@ function validate(){
   }
 
 
-  // api map 
+  // api map (automatic when user try to insert address)
 
   function initMap(){
     let location = document.getElementById('inputAddress');
@@ -99,9 +99,10 @@ function validate(){
   }
 
 
+  // google map (located the pets that lost) 
 function locationMap(){
   var options = {
-    center: {lat:42.3601, lng:-71.057083},
+    center: {lat:42.3601, lng:-71.057083}, //for Boston area
     zoom: 9
   }
   map = new google.maps.Map(document.getElementById('map'), options)  
