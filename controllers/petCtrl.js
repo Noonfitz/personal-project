@@ -31,7 +31,8 @@ module.exports = {
 },
 
 pet_report_post: (request,response) => {
-    const {type, date, breed, address, gender, age, color, weight, hair ,collar, addition, image} =request.body;
+    const {type, date, breed, address, gender, age, color, weight, hair ,collar, addition, image,imageupload } = request.body;
+
     const newPet = new Pet ({
     type: type,
     date: date, 
@@ -44,7 +45,8 @@ pet_report_post: (request,response) => {
     hair: hair, 
     collar: collar, 
     addition: addition, 
-    image: image
+    image: image,
+    imageupload: `https://lost-pet-app.s3.amazonaws.com/${imageupload}`
     });
 
     newPet.save();
