@@ -45,11 +45,11 @@ const petSchema = new Schema({
    image: {
     type: String,
   },
-  imageupload : {
+  // imageupload : {
    
-      type:String
+  //     type:String
     
-  }
+  // }
 
 
 });

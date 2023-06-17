@@ -144,7 +144,7 @@ $(document).ready(function(){
      var uploadInput = $('#upload-input');
      if(uploadInput.val() != ''){
       var formData = new FormData();
-      formData.append('imageupload', uploadInput[0].files[0]);  //to put img inside formdata 2 parameter(img hold the image from input, secondone  uploadPic array[0] basis)
+      formData.append('image', uploadInput[0].files[0]);  //to put img inside formdata 2 parameter(img hold the image from input, secondone  uploadPic array[0] basis)
 
 
       //make ajax to request to send image to data base

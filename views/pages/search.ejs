@@ -12,7 +12,7 @@
   <% for(pet of petsArray) { %>
    
     <div class="pet-individual"> 
-      <a href="/search/<%=pet._id %>"><img src="/images/<%= pet.image %>" alt="<%= pet.breed %>"></a>
+      <a href="/search/<%=pet._id %>"><img src="<%= pet.image %>" alt="<%= pet.breed %>"></a>
       <p class="search-type"><div class="found-lost <%= pet.type === 'Found' ? 'change-yellow': 'change-red'%>"><%= pet.type %></div><%= pet.breed %><br><a href="/search/<%=pet._id %>"class="detail-link">Details</a></p>
     </div>
 
