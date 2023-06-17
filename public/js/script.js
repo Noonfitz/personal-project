@@ -139,7 +139,7 @@ function locationMap(){
 $(document).ready(function(){
   $('.upload-btn').on('click', function(){
     $('#upload-input').click();
-  });
+  })
   $('#upload-input').on('change',function(){
      var uploadInput = $('#upload-input');
      if(uploadInput.val() != ''){

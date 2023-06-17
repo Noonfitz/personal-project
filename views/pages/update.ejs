@@ -31,19 +31,17 @@
        </div>
   
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
+          <label for="inputAddress" class="form-label">Address, the last time you were seeing</label>
           <input type="text" class="form-control" name ="address" id="inputAddress"  value="<%= foundPet.address %>">
         </div>
   
   
-      
         <div class="col-12">
-          <label for="upload-pic" class="form-label">UpLoad a Photo of Your Pet</label>
-          <input type="file" class="form-control"name='image' id="upload-pic" ><br>
-          <!-- <button class="btn btn-secondary" type="button" id="upload-pic">Upload Photo</button> -->
+          <label for="upload-pic" class="form-label">UpLoad a Photo of Your Pet</label><br>
+          <button class="btn btn-secondary upload-btn" type="button" >Upload Photo</button>
+          <input type="file" class="form-control" name='image' id="upload-input2" style="display: none">
         </div>  
-  
-       
+        
   
        <div class="col-12"> 
           <label for="what-gender" class="form-label">What gender is the pet?</label>
