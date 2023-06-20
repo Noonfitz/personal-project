@@ -75,7 +75,7 @@ pet_update_put: (request, response) => {
         hair: hair, 
         collar: collar, 
         addition: addition, 
-        image: image
+        image: `https://lost-pet-app.s3.amazonaws.com/${image}`
     }}, {new: true}, error => {
       if(error) {
         return error;
