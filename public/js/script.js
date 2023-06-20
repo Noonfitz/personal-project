@@ -13,15 +13,16 @@ menuBtn.addEventListener("click",function(){
 
 
 //for index(picture move with ratio button)
-let radioCountForward = 1;
-setInterval(function(){
-    document.getElementById("radio" + radioCountForward).checked = true;
-    radioCountForward++;
-    if(radioCountForward > 5){
-        radioCountForward = 1;
-    }
+
+// let radioCountForward = 1;
+// setInterval(function(){
+//     document.getElementById("radio" + radioCountForward).checked = true;
+//     radioCountForward++;
+//     if(radioCountForward > 5){
+//         radioCountForward = 1;
+//     }
   
-},3000);
+// },3000);
 
 
 // if(pet.type === "found"){
