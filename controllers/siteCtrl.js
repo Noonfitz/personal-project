@@ -115,7 +115,7 @@ module.exports = {
         response.redirect('/login');
       } else {
         passport.authenticate('local')(request, response, () => {
-          response.redirect('/admin');
+          response.redirect('/search');
         });
       }
     });
@@ -131,7 +131,7 @@ module.exports = {
   google_redirect_get: [
     passport.authenticate('google', {failureRedirect: '/login'}),
     function(request, response) {
-      response.redirect('/admin');
+      response.redirect('/search');
     }
   ]
 

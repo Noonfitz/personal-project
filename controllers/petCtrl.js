@@ -52,7 +52,7 @@ pet_report_post: (request,response) => {
     newPet.save();
 
     if (breed != "") {
-        response.redirect("/admin")
+        response.redirect("/search")
       } else {
         response.redirect('/admin/report-pet')
       }
