@@ -40,7 +40,7 @@ router.route('/donate')
 router.route('/auth/google')
  .get(siteCtrl.google_get)
 
-router.route('/auth/google/admin')
+router.route('/auth/google/search')
 .get(siteCtrl.google_redirect_get)
 
 
